@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>First Phone-Gap APP</title>
+  </head>
+  <body>
+		<div id="btn-div">
+			<button id="dateBtn">Date</button>
+			<button id="clr">Clear</button>
+		</div>
+		<div id="result">
+
+		</div>
+		<script src="js/jquery-1.11.1.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('#dateBtn').on('click', function () {
+					$('#result').append(new Date() + '<br />');
+				});
+				$('#clr').on('click', function () {
+					$('#result').html('');
+				});
+			});
+		</script>
+  </body>
+</html>
